@@ -53,7 +53,7 @@ h1 {
   background-color: lightgreen;
 }
 
-#check {
+#check, #reset {
   margin-top: 25px;
   width: 120px;
   height: 30px;

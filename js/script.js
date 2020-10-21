@@ -20,14 +20,14 @@ generate.addEventListener('click',
       sconto = price * 0.4;
     }
     var priceDef = price - sconto;
-    var coach = Math.floor(Math.random() * (100000 - 90000) )
+    var coach = Math.floor(Math.random() * 10) + 1;
     var codiceCp = Math.floor(Math.random() * (100000 - 90000) ) + 90000; //num compreso tra 90000 a 100000 escluso
     document.getElementById("box-genera").style.display = "block";
     document.getElementById("ticket-result").style.display = "block";
     document.getElementById("ris-nom").innerHTML = nomePasseggero;
     document.getElementById("offerta").innerHTML = age;
     document.getElementById("carrozza").innerHTML = coach;
-    document.getElementById("costo-biglietto").innerHTML = priceDef;
+    document.getElementById("costo-biglietto").innerHTML = priceDef.toFixed(2);
     document.getElementById("codice-cp").innerHTML = codiceCp;
   }
   );

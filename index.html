@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form calcolo prezzo biglietto del treno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- titolo -->
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <!-- Box dati passeggero -->
+    <div class="box-dati">
+      <div class="name">
+        <form class="in-center" action="index.html" method="post">
+          <h3>Nome  Cognome</h3>
+          <input type="text" name="nome passeggero" value="">
+        </form>
+      </div>
+      <!-- km da percorrere -->
+      <div class="km">
+        <form class="in-center" action="index.html" method="post">
+          <h3>Km da percorrere</h3>
+          <input id="in-center" type="number" name="chilometri" min="1" max="1000">
+        </form>
+      </div>
+      <!-- età -->
+      <div class="eta">
+        <form class="in-center" action="index.html" method="post">
+          <h3>Fascie d'età</h3>
+            <select name="age">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over-65">Over 65</option>
+            </select>
+        </form>
+      </div>
+      <!-- button Genera e Annulla -->
+      <div class="box-button">
+        <input id="check" type="button" value="Genera">
+        <input id="check" type="button" value="Annulla">
+      </div>
+    </div>
+    <!-- Box risultato biglietto -->
+    <h1 id="ticket-result">IL TUO BIGLIETTO</h1>
+    <div class="box-genera">
+      <h2>DETTAGLI PASSEGGERO</h2>
+      <div class="name-passenger">
+        <h3>NOME PASSEGGERO</h3>
+        <span></span>
+      </div>
+      <!-- Dettagli su offerta, carrozza, prezzo, ecc... -->
+      <div class="box-info">
+        <h4>OFFERTA</h4>
+        <span></span>
+      </div>
+
+      <div class="box-info">
+        <h4>CARROZZA</h4>
+        <span></span>
+      </div>
+
+      <div class="box-info">
+        <h4>CODICE CP</h4>
+        <span></span>
+      </div>
+
+      <div class="box-info">
+        <h4>COSTO BIGLIETTO</h4>
+        <span></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+  </body>
+</html>

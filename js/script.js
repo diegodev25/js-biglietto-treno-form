@@ -27,7 +27,17 @@ generate.addEventListener('click',
     document.getElementById("ris-nom").innerHTML = nomePasseggero;
     document.getElementById("offerta").innerHTML = age;
     document.getElementById("carrozza").innerHTML = coach;
-    document.getElementById("costo-biglietto").innerHTML = priceDef.toFixed(2);
+    document.getElementById("costo-biglietto").innerHTML = priceDef.toFixed(2) + " &#8364;";
     document.getElementById("codice-cp").innerHTML = codiceCp;
+  }
+  );
+
+// Reset di tutti i dati
+var annulla = document.getElementById('reset');
+annulla.addEventListener('click',
+  function () {
+    document.getElementById("ticket-result").style.display = "none";
+    document.getElementById("box-genera").style.display = "none";
+    document.getElementById("myForm").reset();
   }
   );

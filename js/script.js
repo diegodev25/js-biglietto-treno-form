@@ -39,5 +39,7 @@ annulla.addEventListener('click',
     document.getElementById("ticket-result").style.display = "none";
     document.getElementById("box-genera").style.display = "none";
     document.getElementById("myForm").reset();
+    document.getElementById("km").value = null;
+    document.getElementById("age").value = null;
   }
   );
